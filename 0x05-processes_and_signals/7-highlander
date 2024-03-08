@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Bash script that echos To infinity and beyond indefinitely with conditions
+
+text="To infinity and beyond"
+while "true"
+do
+	echo "$text"
+	sleep 2
+	trap 'echo "I am invincible!!!"' SIGTERM
+done
