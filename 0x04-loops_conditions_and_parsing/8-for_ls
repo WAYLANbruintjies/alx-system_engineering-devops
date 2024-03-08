@@ -6,6 +6,6 @@ do
 	if [ -f "$files" ] && [[ "$files" != .* ]]
 	then
 		newname=$(echo "$files" | cut -d'-' -f2-)
-		echo $newname
+		echo "$newname"
 	fi
 done
