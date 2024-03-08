@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Display only names of files in current directory in a list format
+
+for files in *;
+do
+	if [ -f "$files" ] && [[ "$files" != .* ]]
+	then
+		newname=$(echo "$files" | cut -d'-' -f2-)
+		echo $newname
+	fi
+done
